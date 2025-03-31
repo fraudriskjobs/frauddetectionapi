@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 import os
 
 # Use Render's environment variable
-SQLALCHEMY_DATABASE_URL = os.getenv(postgresql://frauddetection_db_user:oUYa375Th2tSSsCimytrTlGwOj9KOjLB@dpg-cvl876s9c44c73fblnog-a/frauddetection_db)  # Render auto-injects this
+SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL")  # Render auto-injects this
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
