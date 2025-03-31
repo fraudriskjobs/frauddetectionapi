@@ -1,0 +1,4 @@
+email,email_encoded
+fraud@temp.com,0
+safe@gmail.com,2
+risk@outlook.com,1
